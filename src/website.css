@@ -1,0 +1,150 @@
+:root {
+  /* Paleta morada */
+  --purpura: #51e451;
+  --purpura-claro: #d8f5d1;
+  --purpura-oscuro: #51e451 ;
+  --degradado-purpura-inicio: #d8f5d1;
+  --degradado-purpura-fin: #8ed68e;
+
+  /* Neutros */
+  --gris-titulo: #666;
+  --negro-texto: #222;
+
+  /* Navegación */
+  --color-nav-fondo: var(--purpura);
+  --color-nav-texto: #f9f9f9;
+  --color-nav-hover: var(--purpura-oscuro);
+
+  /* Formularios */
+  --form-fondo: #ffffff;
+  --form-titulo: var(--gris-titulo);
+  --form-label: var(--negro-texto);
+  --form-borde: #dcdde1;
+
+  /* Botones */
+  --btn-fondo: var(--purpura);
+  --btn-hover: var(--purpura-oscuro);
+  --btn-texto: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: var(--purpura-claro);
+  color: var(--negro-texto);
+  line-height: 1.6;
+}
+
+/* Navegación */
+nav {
+  background-color: var(--color-nav-fondo);
+  padding: 1rem;
+  text-align: center;
+}
+
+nav a {
+  color: var(--color-nav-texto);
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: var(--color-nav-hover);
+}
+
+/* Contenido centrado */
+.centered {
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* Formulario */
+form {
+  background: var(--form-fondo);
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 400px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form h1 {
+  margin-bottom: 1.5rem;
+  color: var(--form-titulo);
+}
+
+form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--form-label);
+  font-weight: 500;
+  text-align: left;
+}
+
+form input {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid var(--form-borde);
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+form button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: var(--btn-fondo);
+  color: var(--btn-texto);
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: var(--btn-hover);
+}
+
+/* Contador */
+.contador-container {
+  text-align: center;
+  font-size: 1.2rem;
+  background: linear-gradient(135deg, var(--degradado-purpura-inicio), var(--degradado-purpura-fin));
+  padding: 30px;
+  margin: 20px auto;
+  width: 300px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  color: var(--negro-texto);
+}
+
+.contador-container h1 {
+  margin-bottom: 20px;
+  color: var(--gris-titulo);
+  font-size: 1.6rem;
+}
+
+.contador-container button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: var(--btn-fondo);
+  color: var(--btn-texto);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contador-container button:hover {
+  background-color: var(--btn-hover);
+}
